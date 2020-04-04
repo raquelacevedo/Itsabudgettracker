@@ -25,7 +25,7 @@ mongoose.connect(
   {
     useMongoClient: true
   }
-)
+);
 
 // routes
 app.use(require("./routes/api.js"));
