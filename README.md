@@ -7,13 +7,9 @@ Its Another Budget Tracker is a budgeting app that allows users to keep track of
 
 ## Features
 
-* Users can add new Items to the site through the form feature.
-* Users can login and sign out with their user authentication. 
-* Users can view all other users posts. 
-* Users can update there posts hrough our update feature. 
-* Users can delete there posts when they have new ideas that they want to acheive. 
-* Users can add images to there posts.
-* Users can costumize there post to the fullest. 
+* Users can add or subtract funds they would like to track.
+* Users will be able to view transactions over time. 
+* Users can use app online or offline.
  
 
 
