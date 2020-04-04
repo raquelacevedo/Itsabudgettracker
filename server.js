@@ -16,20 +16,14 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-// mongoose.connect("mongodb://localhost/budget", {
-//   useNewUrlParser: true,
-//   useFindAndModify: false
-// });
+mongoose.connect("mongodb://localhost/budget", {
+  useNewUrlParser: true,
+  useFindAndModify: false
+});
 
-// mongoose.connect(
-//   process.env.MONGODB_URI || "mongodb://user:password1@ds047772.mlab.com:47772/heroku_dbnpvq73",
-//   {
-//     useMongoClient: true
-//   }
-// );
-
-let MONGODB_URI = process.env.MONGODB_URI || "mongodb://user:password1@ds047772.mlab.com:47772/heroku_dbnpvq73";
-mongoose.connect(MONGODB_URI);
+// ///for heroku to work
+// let MONGODB_URI = process.env.MONGODB_URI || "mongodb://user:password1@ds047772.mlab.com:47772/heroku_dbnpvq73";
+// mongoose.connect(MONGODB_URI);
 
 // routes
 app.use(require("./routes/api.js"));
