@@ -20,12 +20,15 @@ app.use(express.static("public"));
 //   useFindAndModify: false
 // });
 
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://user:password1@ds047772.mlab.com:47772/heroku_dbnpvq73",
-  {
-    useMongoClient: true
-  }
-);
+// mongoose.connect(
+//   process.env.MONGODB_URI || "mongodb://user:password1@ds047772.mlab.com:47772/heroku_dbnpvq73",
+//   {
+//     useMongoClient: true
+//   }
+// );
+
+let MONGODB_URI = process.env.MONGODB_URI || "mongodb://user:password1@ds047772.mlab.com:47772/heroku_dbnpvq73";
+mongoose.connect(MONGODB_URI);
 
 // routes
 app.use(require("./routes/api.js"));
